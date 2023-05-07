@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #222;
+    color: #eee;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 99vh; /* 100% ablak magasság */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box; /* Mindenbe számítsa bele a keretet */
+}
+
+header {
+    background-image: url("https://picsum.photos/id/20/1920/256");
+
+    height: 256px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px; 
+    text-align: justify;
+}
+
+footer {
+    height: 48px;
+    border-top: 1px solid #eee;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.menu {
+    margin-top: calc(256px - 48px);
+    
+    height: 48px;
+    background-color: #222222bb;
+
+    padding-left: 20px;
+}
+
+button {
+    height: 100%;
+    padding: 0 24px;
+}
+
+.page {
+    flex: 1;
+}
+
+.page[visible="false"] {
+    display: none;
+}
+
+img {
+    width: 512px;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 1024px;
+}

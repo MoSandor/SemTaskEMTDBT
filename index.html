@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Molnár Sándor EMTDBT</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="menu">
+                <button onclick="showPage(0)">Kezdőlap</button>
+                <button onclick="showPage(1)">Villamosgépek és hajtások</button>
+                <button onclick="showPage(2)">Villamosenergia ellátás</button>
+                <button onclick="showPage(3)">Villamos védelmek és automatikák</button>
+            </div>
+        </header>
+        <main>
+            <div visible="true" class="page" id="page-main">
+                <h1>Kezdőlap</h1>
+                <img src="kepek/kezdolap.avif" alt="">
+                <p>
+                    Ez a weboldal a WEB-es technologiák tárgy beadandójára készült, és tartalmazza az elmúlt félévekből a kedvenc témaköreimet.
+                </p>
+            </div>
+            <div visible="false" class="page" id="page-a">
+                <h1>Villamosgépek és hajtások</h1>
+                <img src="kepek/hajtas.jpg" alt="">
+                <ul>
+                    <li>Bevezetés a villamos gépek világába. A
+                        villamos gépek csoportosítása, helyük és
+                        szerepük a villamosenergia-rendszerben.</li>
+                    <li>Transzformátorok felépítése és működési
+                        elvük. Egyfázisú transzformátorok
+                        helyettesítő kapcsolása.</li>
+                    <li>Háromfázisú transzformátorok, kapcsolási
+                        típusai, üzemállapotai.</li>
+                    <li>Aszinkron gépek felépítése és működése.
+                        Mechanikai jelleggörbéje.</li>
+                    <li>Szinkron gépek felépítése, működése,
+                        mechanikai jelleggörbéje, szinkronozás.</li>
+                    <li>Egyenáramú gépek felépítése és működése.
+                        Mechanikai jelleggörbék.</li>
+                    <li>Villamos hajtások kinematikája. Nyomaték
+                        és tömeg átszámítása közös tengelyre.</li>
+                </ul>
+            </div>
+            <div visible="false" class="page" id="page-b">
+                <h1>Villamosenergia ellátás</h1>
+                <img src="kepek/paks2.jpg" alt="">
+                <ul>
+                    <li>Villamosenergia-előállítása,
+                        energiahordozók, erőművek.</li>
+                    <li>Villamosenergia-átvitel jellemzői,
+                        szabványos rendszerei. Elosztói
+                        hálózatok.</li>
+                    <li>Hálózati impedanciák. A hálózatok
+                        egyszerű helyettesítő vázlatai. Közös
+                        feszültségalapra redukálás.</li>
+                    <li>Szinkrongenerátorok az
+                        energiarendszerben. Szinkrongépek zárlati
+                        viszonyai. 1. Zárthelyi.</li>
+                    <li>Hálózatok hibaállapotai. Hálózati elemek
+                        egyfázisú helyettesítő vázlatai.</li>
+                    <li>Aszimmetrikus hibák számítása a
+                        szimmetrikus összetevők alkalmazásával.
+                        Hálózati elemek sorrendi impedanciája.</li>
+                    <li>Hagyományos és megújuló energiaforrás
+                        a szünetmentes villamosenergia-
+                        ellátásban.</li>
+                </ul>
+            </div>
+            <div visible="false" class="page" id="page-c">
+                <h1>Villamos védelmek és automatikák</h1>
+                <img src="kepek/megszakito.jpg" alt="">
+                <ul>
+                    <li>Beveztés a villamosvédelmek világába</li>
+                    <li>Elektromechanikus védelmek</li>
+                    <li>Túláramvédelmek</li>
+                    <li>Különbözeti védelmek</li>
+                    <li>Impedancia védelmek</li>
+                    <li>Távolsági védelmek</li>
+                    <li>Digitális védelmek</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>
+                Molnár Sándor EMTDBT
+            </p>
+        </footer>
+        <script>
+            function showPage(melyiket) {
+                const pages = document.getElementsByClassName("page");
+                for (let i = 0; i < pages.length; i++) {
+                    pages[i].setAttribute("visible", "false");
+                }
+                pages[melyiket].setAttribute("visible", "true");
+            }
+        </script>
+    </body>
+
+</html>
