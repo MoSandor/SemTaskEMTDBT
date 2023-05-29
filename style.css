@@ -65,3 +65,34 @@ img {
     height: auto;
 }
 
+.kep-keret {
+    display: flex;
+    gap: 24px;
+}
+
+.kep-jobbra {
+    margin-left: auto;
+}
+
+.kep-kozepre {
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #eee;
+    padding: 0.5rem;
+}
+
+label {
+    display: inline-block;
+    width: 72px;
+}

@@ -16,75 +16,113 @@
                 <button onclick="showPage(1)">Villamosgépek és hajtások</button>
                 <button onclick="showPage(2)">Villamosenergia ellátás</button>
                 <button onclick="showPage(3)">Villamos védelmek és automatikák</button>
+                <button onclick="showPage(4)">Űrlap példa</button>
+                <button onclick="showPage(5)">Videó példa</button>
             </div>
         </header>
         <main>
             <div visible="true" class="page" >
                 <h1>Kezdőlap</h1>
-                <img src="kepek/kezdolap.avif" alt="">
-                <p>
-                    Ez a weboldal a WEB-es technologiák tárgy beadandójára készült, és tartalmazza az elmúlt félévekből a kedvenc témaköreimet.
-                </p>
+                <div class="kep-keret">
+                    <img src="kepek/kezdolap.avif" alt="">
+                    <div>
+                        <p>
+                            Ez a weboldal a <u><b><i>WEB-es technologiák</i></b></u> tárgy beadandójára készült, és tartalmazza az elmúlt <i>félévekből</i> a kedvenc témaköreimet.
+                        </p>
+                        <table>
+                            <tr>
+                                <td>Név: </td>
+                                <td>Molnár Sándor</td>
+                            </tr>
+                            <tr>
+                                <td>Neptun kód:</td>
+                                <td>EMTDBT</td>
+                            </tr>
+                            <tr>
+                                <td>Github: </td>
+                                <td><a href="https://github.com/MoSandor/SemTaskEMTDBT">MoSandor</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
             <div visible="false" class="page" >
                 <h1>Villamosgépek és hajtások</h1>
-                <img src="kepek/hajtas.jpg" alt="">
-                <ul>
-                    <li>Bevezetés a villamos gépek világába. A
-                        villamos gépek csoportosítása, helyük és
-                        szerepük a villamosenergia-rendszerben.</li>
-                    <li>Transzformátorok felépítése és működési
-                        elvük. Egyfázisú transzformátorok
-                        helyettesítő kapcsolása.</li>
-                    <li>Háromfázisú transzformátorok, kapcsolási
-                        típusai, üzemállapotai.</li>
-                    <li>Aszinkron gépek felépítése és működése.
-                        Mechanikai jelleggörbéje.</li>
-                    <li>Szinkron gépek felépítése, működése,
-                        mechanikai jelleggörbéje, szinkronozás.</li>
-                    <li>Egyenáramú gépek felépítése és működése.
-                        Mechanikai jelleggörbék.</li>
-                    <li>Villamos hajtások kinematikája. Nyomaték
-                        és tömeg átszámítása közös tengelyre.</li>
-                </ul>
+                <div class="kep-keret">
+                    <img src="kepek/hajtas.jpg" alt="">
+                    <ul>
+                        <li>Bevezetés a villamos gépek világába. A
+                            villamos gépek csoportosítása, helyük és
+                            szerepük a villamosenergia-rendszerben.</li>
+                        <li>Transzformátorok felépítése és működési
+                            elvük. Egyfázisú transzformátorok
+                            helyettesítő kapcsolása.</li>
+                        <li>Háromfázisú transzformátorok, kapcsolási
+                            típusai, üzemállapotai.</li>
+                        <li>Aszinkron gépek felépítése és működése.
+                            Mechanikai jelleggörbéje.</li>
+                        <li>Szinkron gépek felépítése, működése,
+                            mechanikai jelleggörbéje, szinkronozás.</li>
+                        <li>Egyenáramú gépek felépítése és működése.
+                            Mechanikai jelleggörbék.</li>
+                        <li>Villamos hajtások kinematikája. Nyomaték
+                            és tömeg átszámítása közös tengelyre.</li>
+                    </ul>
+                </div>
             </div>
             <div visible="false" class="page" >
-                <h1>Villamosenergia ellátás</h1>
-                <img src="kepek/paks2.jpg" alt="">
-                <ul>
-                    <li>Villamosenergia-előállítása,
-                        energiahordozók, erőművek.</li>
-                    <li>Villamosenergia-átvitel jellemzői,
-                        szabványos rendszerei. Elosztói
-                        hálózatok.</li>
-                    <li>Hálózati impedanciák. A hálózatok
-                        egyszerű helyettesítő vázlatai. Közös
-                        feszültségalapra redukálás.</li>
-                    <li>Szinkrongenerátorok az
-                        energiarendszerben. Szinkrongépek zárlati
-                        viszonyai. 1. Zárthelyi.</li>
-                    <li>Hálózatok hibaállapotai. Hálózati elemek
-                        egyfázisú helyettesítő vázlatai.</li>
-                    <li>Aszimmetrikus hibák számítása a
-                        szimmetrikus összetevők alkalmazásával.
-                        Hálózati elemek sorrendi impedanciája.</li>
-                    <li>Hagyományos és megújuló energiaforrás
-                        a szünetmentes villamosenergia-
-                        ellátásban.</li>
-                </ul>
+                <div class="kep-keret kep-kozepre">
+                    <h1>Villamosenergia ellátás</h1>
+                    <img src="kepek/paks2.jpg" alt="">
+                    <ul>
+                        <li>Villamosenergia-előállítása,
+                            energiahordozók, erőművek.</li>
+                        <li>Villamosenergia-átvitel jellemzői,
+                            szabványos rendszerei. Elosztói
+                            hálózatok.</li>
+                        <li>Hálózati impedanciák. A hálózatok
+                            egyszerű helyettesítő vázlatai. Közös
+                            feszültségalapra redukálás.</li>
+                        <li>Szinkrongenerátorok az
+                            energiarendszerben. Szinkrongépek zárlati
+                            viszonyai. 1. Zárthelyi.</li>
+                        <li>Hálózatok hibaállapotai. Hálózati elemek
+                            egyfázisú helyettesítő vázlatai.</li>
+                        <li>Aszimmetrikus hibák számítása a
+                            szimmetrikus összetevők alkalmazásával.
+                            Hálózati elemek sorrendi impedanciája.</li>
+                        <li>Hagyományos és megújuló energiaforrás
+                            a szünetmentes villamosenergia-
+                            ellátásban.</li>
+                    </ul>
+                </div>
             </div>
             <div visible="false" class="page" >
                 <h1>Villamos védelmek és automatikák</h1>
-                <img src="kepek/megszakito.jpg" alt="">
-                <ul>
-                    <li>Beveztés a villamosvédelmek világába</li>
-                    <li>Elektromechanikus védelmek</li>
-                    <li>Túláramvédelmek</li>
-                    <li>Különbözeti védelmek</li>
-                    <li>Impedancia védelmek</li>
-                    <li>Távolsági védelmek</li>
-                    <li>Digitális védelmek</li>
-                </ul>
+                <div class="kep-keret">
+                    <ul>
+                        <li>Beveztés a villamosvédelmek világába</li>
+                        <li>Elektromechanikus védelmek</li>
+                        <li>Túláramvédelmek</li>
+                        <li>Különbözeti védelmek</li>
+                        <li>Impedancia védelmek</li>
+                        <li>Távolsági védelmek</li>
+                        <li>Digitális védelmek</li>
+                    </ul>
+                    <div class="kep-jobbra"><img src="kepek/megszakito.jpg" alt=""></div>
+                </div>
+            </div>
+            <div visible="false" class="page">
+                <form>
+                    <label for="name">Név: </label>
+                    <input type="text" name="name" id=""><br>
+                    <label for="message">Üzenet: </label>
+                    <input type="text" name="message" id=""><br><br>
+                    <input type="submit" value="Küldés">
+                </form>
+            </div>
+            <div visible="false" class="page">
+                <video src="HTML5_video.mp4" controls width="512px"></video>
             </div>
         </main>
         <footer>
